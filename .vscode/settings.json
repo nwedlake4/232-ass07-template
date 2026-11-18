@@ -1,4 +1,5 @@
 {
+    "C_Cpp.default.cppStandard": "c++23",
     "files.associations": {
         "stdio.h": "c",
         "type_traits": "c",
