@@ -192,6 +192,7 @@ bool ShapeList::isSorted() const
         return true;
     }
 
+    
     auto current = std::next(previous);
     while (current != data.end()) {
         // Descending or unsorted if current is smaller than previous.
