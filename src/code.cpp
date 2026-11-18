@@ -161,6 +161,7 @@ void ShapeList::insertionSort()
 
     while (key != data.end()) {
         auto keyAfter = std::next(key);
+        Shape* keyShape = *key;
 
         auto position = key;
         while (position != data.begin()) {
@@ -168,7 +169,7 @@ void ShapeList::insertionSort()
 
             // Move key left only if key is strictly smaller than previous.
             // Equal areas remain in their original relative positions.
-            if (!(**position < **previous)) {
+            if (!(*keyShape < **previous)) {
                 break;
             }
 
